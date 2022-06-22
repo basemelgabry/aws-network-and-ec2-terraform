@@ -1,4 +1,5 @@
 # aws-network-and-ec2-terraform
+# AWS network infrastructure and EC2 - Terraform and Jenkins
 create-aws-network-and-ec2-terraform
 This project is parameterized
 Choice Parameter
