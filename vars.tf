@@ -1,5 +1,5 @@
 variable "ami" {
-	default = "ami-0573b70afecda915d"
+	default = "ami-0cff7528ff583bf9a"
 }
 
 variable "instance_type" {
@@ -11,7 +11,7 @@ variable "instance_type" {
 variable "key_name" {
     description = "KEY Name"
     type        = string                          
-    default     = "terraform-key"
+    default     = "BAS-key"
 
 }
 
@@ -27,7 +27,7 @@ variable "aws_instance_name" {
     default     = "terraform-demo"
 }
 
-############### VPV | tf-demovpc ###############
+############### VPC | tf-demovpc ###############
 
 variable "vpc_cidr_block" {
   description = "CIDR block for VPC"
@@ -38,7 +38,7 @@ variable "vpc_cidr_block" {
 variable "aws_vpc_name" {
     description = "AWS instance name"
     type        = string                          
-    default     = "tf-demovpv"
+    default     = "tf-demovpc"
 }
 
 ##################### ING | tf-demoigw ########################
