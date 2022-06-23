@@ -1,8 +1,8 @@
 # Security Group
-resource "aws_security_group" "tf-demosg" {
-  name        = "tf-demosg"
+resource "aws_security_group" "bass3sg" {
+  name        = "bass3sg"
   description = "Allow https inbound traffic"
-  vpc_id      = aws_vpc.tf-demovpc.id
+  vpc_id      = aws_vpc.bass3vpc.id
 
   ingress {
     description      = "SSH from VPC"

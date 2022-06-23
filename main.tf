@@ -14,9 +14,3 @@ provider "aws" {
   secret_key = var.secret_key_var              # our-secret-key
 }
 
-# Terraform Output Values
-output "my_console_output" {
-  value = aws_instance.terraform-demo.public_ip
-} 
-
-

@@ -1,10 +1,7 @@
 
 # Create a VPC 
-#--name tf-demovpc
-#-- cidr_block = "10.11.0.0/16"
-#-- tag = tf-demovpc
 
-resource "aws_vpc" "tf-demovpc" {         # hardcoded
+resource "aws_vpc" "bass3vpc" {         # hardcoded
   cidr_block = var.vpc_cidr_block         # variable
 
   tags = {

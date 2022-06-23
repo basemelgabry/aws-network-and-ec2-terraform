@@ -1,33 +1,33 @@
-variable "ami" {
-	default = "ami-0cff7528ff583bf9a"
-}
+# variable "ami" {
+# 	default = "ami-0cff7528ff583bf9a"
+# }
 
-variable "instance_type" {
-    description = "Instance type t2.micro"
-    type        = string                            # EX strung - number - bool - list - set - ,ap
-    default     = "t2.micro"                        # variable default volue 
-	}
+# variable "instance_type" {
+#     description = "Instance type t2.micro"
+#     type        = string                            # EX strung - number - bool - list - set - ,ap
+#     default     = "t2.micro"                        # variable default volue 
+# 	}
 
-variable "key_name" {
-    description = "KEY Name"
-    type        = string                          
-    default     = "BAS-key"
+# variable "key_name" {
+#     description = "KEY Name"
+#     type        = string                          
+#     default     = "BAS-key"
 
-}
+# }
 
-variable "enable_public_ip" {
-  description = "Enable  associate public IP address"
-  type        = bool
-  default     = true
-}
+# variable "enable_public_ip" {
+#   description = "Enable  associate public IP address"
+#   type        = bool
+#   default     = true
+# }
 
-variable "aws_instance_name" {
-    description = "AWS instance name"
-    type        = string                          
-    default     = "terraform-demo"
-}
+# variable "aws_instance_name" {
+#     description = "AWS instance name"
+#     type        = string                          
+#     default     = "terraform-demo"
+# }
 
-############### VPV | tf-demovpc ###############
+############### VPV | bass3vpc ###############
 
 variable "vpc_cidr_block" {
   description = "CIDR block for VPC"
@@ -38,18 +38,18 @@ variable "vpc_cidr_block" {
 variable "aws_vpc_name" {
     description = "AWS instance name"
     type        = string                          
-    default     = "tf-demovpc"
+    default     = "bass3vpc"
 }
 
-##################### ING | tf-demoigw ########################
+##################### ING | bass3igw ########################
 
 variable "aws_igw_name" {
     description = "AWS instance name"
     type        = string                          
-    default     = "tf-demoigw" 
+    default     = "bass3igw" 
 }
 
-#####################  subnet | tf-demosn ##############
+#####################  subnet | bass3sn ##############
 
 
 
@@ -59,7 +59,7 @@ variable "aws_igw_name" {
 variable "aws_route_table_name" {
     description = "AWS instance name"
     type        = string                          
-    default     = "tf-demortb"
+    default     = "bass3rtb"
 }
 
 variable "aws_route_destination_cidr_block" {
@@ -69,10 +69,10 @@ variable "aws_route_destination_cidr_block" {
 }
 
 
-################### Security group | tf-demosg #####################33
+################### Security group | bass3sg #####################33
 
 variable "aws_security_group_name" {
-    description = "AWS instance name"
+    description = "security group name"
     type        = string                          
-    default     = "tf-demosg"
+    default     = "bass3sg"
 }
