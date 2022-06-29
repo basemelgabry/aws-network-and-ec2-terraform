@@ -1,9 +1,13 @@
 # AWS ec2 state file ft for aws VPC infrastructure terraform
 
+1 - Create AWS infrastructure by Terraform and save terraform.tfstate to S3 bucket
+Branch: aws-infrastructure-s3-23622
+==================================
+2 - Create EC2 by Terraform auto attached to infrastructure VPC - SN - SG ( has created in the first step )
+Creation :
 
-Changes to Outputs:
-  + subnet_id              = "subnet-09b48034b0db0580a"
-  + vpc_cidr_bock          = "10.11.0.0/16"
-  + vpc_id                 = "vpc-024037bf6f566188a"
-  + vpc_name               = "bass3vpc"
-  + vpc_security_group_ids = "sg-01cc31a5f0cf1c8e9"
+git clone -b aws-ec2-s3-23622 https://github.com/basemelgabry/aws-network-and-ec2-terraform.gitterraform initterraform planterraform apply -auto-approve
+Output:
+terraform.tfstate  SAVE in :
+S3 bucket :bucket = "bas-demobucket"key    = "demo/aws-infrastructure-s3-23622/ec2-resource/terraform.tfstate"region = "us-east-1"
+===================================
