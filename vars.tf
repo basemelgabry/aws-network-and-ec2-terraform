@@ -24,7 +24,7 @@ variable "enable_public_ip" {
 variable "aws_instance_name" {
     description = "AWS instance name"
     type        = string                          
-    default     = "terraform-datasource"
+    default     = "terraform-s3"
 }
 
 ################# AWS credentials  #######################
