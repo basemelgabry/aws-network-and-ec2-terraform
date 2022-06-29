@@ -1,6 +1,6 @@
 # aws infrastructure terraform
-Save TF state in AWS S3
-
+#Save TF state in AWS S3
+output.tf
 #
 git checkout -b aws-infrastructure-s3-23622
 git status
